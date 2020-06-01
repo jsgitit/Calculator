@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Calculator
 {
     public static class Calc
     {
-        
+
         // Method uses generic "Func<T1,T2,O3>" delegate
         // It takes in "Left" and "right" (first two params) , and outputs the result in third param.
         private static Func<decimal, decimal, decimal> GetOperation(char oper)
